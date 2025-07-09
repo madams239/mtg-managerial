@@ -74,11 +74,11 @@ class CardRepository @Inject constructor(
     }
     
     suspend fun getRarityDistribution(): Map<String, Int> {
-        return cardDao.getRarityDistribution()
+        return cardDao.getRarityDistribution().associate { it.rarity to it.count }
     }
     
     suspend fun getTopSets(limit: Int = 10): Map<String, Int> {
-        return cardDao.getTopSets(limit)
+        return cardDao.getTopSets(limit).associate { it.setCode to it.count }
     }
     
     suspend fun updateCardQuantity(cardId: String, quantity: Int): Result<Unit> {

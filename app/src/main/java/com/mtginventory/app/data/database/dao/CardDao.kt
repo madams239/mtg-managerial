@@ -4,6 +4,17 @@ import androidx.room.*
 import com.mtginventory.app.data.database.entities.CardEntity
 import kotlinx.coroutines.flow.Flow
 
+// Data classes for query results
+data class RarityCount(
+    val rarity: String,
+    val count: Int
+)
+
+data class SetCount(
+    val setCode: String,
+    val count: Int
+)
+
 @Dao
 interface CardDao {
 
@@ -78,10 +89,10 @@ interface CardDao {
     suspend fun getDeckValue(deckId: String): Double
 
     @Query("SELECT rarity, COUNT(*) as count FROM cards GROUP BY rarity")
-    suspend fun getRarityDistribution(): Map<String, Int>
+    suspend fun getRarityDistribution(): List<RarityCount>
 
     @Query("SELECT setCode, COUNT(*) as count FROM cards GROUP BY setCode ORDER BY count DESC LIMIT :limit")
-    suspend fun getTopSets(limit: Int = 10): Map<String, Int>
+    suspend fun getTopSets(limit: Int = 10): List<SetCount>
 
     // Update operations
     @Query("UPDATE cards SET quantity = :quantity, updatedAt = :timestamp WHERE id = :cardId")

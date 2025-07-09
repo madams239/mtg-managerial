@@ -11,22 +11,15 @@ import com.mtginventory.app.data.database.entities.*
 @Database(
     entities = [
         CardEntity::class,
-        CollectionEntity::class,
-        PriceHistoryEntity::class,
-        ScanSessionEntity::class,
-        MTGSetEntity::class
+        CollectionEntity::class
     ],
     version = 1,
     exportSchema = false
 )
-@TypeConverters(Converters::class)
 abstract class MTGInventoryDatabase : RoomDatabase() {
 
     abstract fun cardDao(): CardDao
     abstract fun collectionDao(): CollectionDao
-    abstract fun priceHistoryDao(): PriceHistoryDao
-    abstract fun scanSessionDao(): ScanSessionDao
-    abstract fun mtgSetDao(): MTGSetDao
 
     companion object {
         @Volatile
@@ -48,7 +41,3 @@ abstract class MTGInventoryDatabase : RoomDatabase() {
     }
 }
 
-class Converters {
-    // Add any type converters needed for complex data types
-    // For now, we're using JSON strings for lists/maps
-}
