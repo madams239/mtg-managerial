@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode. -->
+    <style name="Theme.MTGInventoryApp" parent="Theme.Material3.Dark">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/blue_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/blue_tint</item>
+        <item name="colorOnPrimaryContainer">@color/blue_accent</item>
+        
+        <item name="colorSurface">@color/neutral_10</item>
+        <item name="colorOnSurface">@color/neutral_99</item>
+        <item name="colorSurfaceVariant">@color/neutral_30</item>
+        <item name="colorOnSurfaceVariant">@color/neutral_80</item>
+        
+        <item name="colorBackground">@color/neutral_10</item>
+        <item name="colorOnBackground">@color/neutral_99</item>
+        
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+</resources>
