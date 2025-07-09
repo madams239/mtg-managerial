@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MTG Inventory</string>
+    
+    <!-- Scanner -->
+    <string name="scanner_title">Card Scanner</string>
+    <string name="scanner_subtitle">Scan multiple cards at once</string>
+    <string name="scanner_empty_title">Ready to Scan</string>
+    <string name="scanner_empty_subtitle">Position cards flat and well-lit\nfor best results</string>
+    <string name="start_scanning">Start Scanning</string>
+    <string name="add_more">Add More</string>
+    <string name="save_collection">Save Collection</string>
+    <string name="clear_all">Clear All</string>
+    
+    <!-- Collection -->
+    <string name="collection_title">Collection</string>
+    <string name="collection_empty_title">No Cards Yet</string>
+    <string name="collection_empty_subtitle">Start scanning to build your collection</string>
+    
+    <!-- Decks -->
+    <string name="decks_title">Decks</string>
+    <string name="decks_empty_title">No Decks Yet</string>
+    <string name="decks_empty_subtitle">Create your first deck to get started</string>
+    <string name="create_deck">Create Deck</string>
+    
+    <!-- Analytics -->
+    <string name="analytics_title">Analytics</string>
+    <string name="analytics_subtitle">Collection insights and trends</string>
+    <string name="analytics_empty_title">No Data Yet</string>
+    <string name="analytics_empty_subtitle">Start building your collection to see insights</string>
+    
+    <!-- Camera -->
+    <string name="camera_instructions_title">Hold device steady over cards</string>
+    <string name="camera_instructions_subtitle">Make sure collector numbers and set codes are visible</string>
+    <string name="scan_cards">Scan Cards</string>
+    <string name="processing">Processing...</string>
+    
+    <!-- Navigation -->
+    <string name="nav_scanner">Scan</string>
+    <string name="nav_collection">Collection</string>
+    <string name="nav_decks">Decks</string>
+    <string name="nav_analytics">Analytics</string>
+    
+    <!-- General -->
+    <string name="settings">Settings</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    
+    <!-- Rarity -->
+    <string name="rarity_common">Common</string>
+    <string name="rarity_uncommon">Uncommon</string>
+    <string name="rarity_rare">Rare</string>
+    <string name="rarity_mythic">Mythic</string>
+    
+    <!-- Stats -->
+    <string name="stat_scanned">Scanned</string>
+    <string name="stat_value">Value</string>
+    <string name="stat_session">Session</string>
+    
+    <!-- Errors -->
+    <string name="error_camera_permission">Camera permission is required to scan cards</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_processing">Error processing cards. Please try again.</string>
+    <string name="error_saving">Error saving cards. Please try again.</string>
+</resources>
